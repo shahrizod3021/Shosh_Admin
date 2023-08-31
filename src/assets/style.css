@@ -1,0 +1,9 @@
+.minimize{
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .minimize{
+        display: none;s
+    }
+}

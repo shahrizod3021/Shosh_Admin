@@ -130,7 +130,7 @@ export const GetRequest = async () => {
     try {
         const res = await axios.get(BaseUrl + Apis.request)
         if (isSuccess(res.status)){
-            return res.data._embedded.list
+            return res.data
         }
     }catch (err){
         return toast.error("ошибка в списке запросов")

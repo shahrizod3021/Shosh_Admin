@@ -160,9 +160,9 @@ export const News = () => {
                             </form>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">закрывать</button>
                             <button type="button" className="btn btn-primary" data-bs-target={"#uploadPhoto"}
-                                    data-bs-toggle={"modal"} onClick={() => addNews()}>Saqlash
+                                    data-bs-toggle={"modal"} onClick={() => addNews()}>Сохранять
                             </button>
                         </div>
                     </div>

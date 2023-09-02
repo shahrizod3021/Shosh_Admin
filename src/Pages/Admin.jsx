@@ -60,7 +60,7 @@ export const Admin = () => {
                                 <label htmlFor="name">введите имя</label>
                                 <input type="text" value={name} onChange={e => setName(e.target.value)} id={"name"}
                                        name={"name"} className={"form-control"}
-                                       placeholder={"Например: Новости в Modern Shosh"}/>
+                                       placeholder={"Например: Admin"}/>
                                 <label htmlFor="about" className={"mt-4"}>электронная почта</label>
                                 <input type={"text"} id={"email"} className={"form-control"} name={"email"} value={email}
                                           placeholder={"введите адрес электронной почты"}

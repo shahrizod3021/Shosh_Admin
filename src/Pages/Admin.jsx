@@ -20,17 +20,19 @@ export const Admin = () => {
         await AddAdmin(data)
         await getAll()
     }
-    return(
+    return (
         <div>
             <div className={"table-responsive"}>
-                <button className={"btn btn-light mb-3"} type={"button"} data-bs-target={'#addAdmin'} data-bs-toggle={"modal"} style={{float:"right"}}>Добавить администратора</button>
+                <button className={"btn btn-light mb-3"} type={"button"} data-bs-target={'#addAdmin'}
+                        data-bs-toggle={"modal"} style={{float: "right"}}>Добавить администратора
+                </button>
                 <table className={"table table-bordered"}>
-                    <thead >
-                        <tr>
-                            <th>Имя</th>
-                            <th>Электронная почта</th>
-                            <th>удалить</th>
-                        </tr>
+                    <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Электронная почта</th>
+                        <th>удалить</th>
+                    </tr>
                     </thead>
                     <tbody>
                     {admins.map((item) => (
@@ -38,7 +40,10 @@ export const Admin = () => {
                             <tr className={"text-white"}>
                                 <td>{item.name}</td>
                                 <td>{item.email}</td>
-                                <td className={"col-1"}><button className={"bg-transparent border-0"} onClick={() => DeleteAdmin(item.id)}><i className={"text-danger mdi mdi-delete"}></i></button></td>
+                                <td className={"col-1"}>
+                                    <button className={"bg-transparent border-0"} onClick={() => DeleteAdmin(item.id)}>
+                                        <i className={"text-danger mdi mdi-delete"}></i></button>
+                                </td>
                             </tr>
                         </>
                     ))}
@@ -62,20 +67,23 @@ export const Admin = () => {
                                        name={"name"} className={"form-control"}
                                        placeholder={"Например: Admin"}/>
                                 <label htmlFor="about" className={"mt-4"}>электронная почта</label>
-                                <input type={"text"} id={"email"} className={"form-control"} name={"email"} value={email}
-                                          placeholder={"введите адрес электронной почты"}
-                                          onChange={event => setEmail(event.target.value)}></input>
+                                <input type={"text"} id={"email"} className={"form-control"} name={"email"}
+                                       value={email}
+                                       placeholder={"введите адрес электронной почты"}
+                                       onChange={event => setEmail(event.target.value)}></input>
                                 <label htmlFor="about" className={"mt-4"}>введите пароль</label>
-                                <input type={"text"} id={"password"} className={"form-control"} name={"password"} value={password}
+                                <input type={"text"} id={"password"} className={"form-control"} name={"password"}
+                                       value={password}
                                        placeholder={"введите пароль"}
                                        onChange={event => setPassword(event.target.value)}></input>
 
                             </form>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
+                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">закрывать
+                            </button>
                             <button type="button" className="btn btn-primary" data-bs-target={"#uploadPhoto"}
-                                    data-bs-toggle={"modal"} onClick={() => addAdmin()}>Saqlash
+                                    data-bs-toggle={"modal"} onClick={() => addAdmin()}>Сохранять
                             </button>
                         </div>
                     </div>

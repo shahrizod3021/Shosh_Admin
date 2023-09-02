@@ -94,7 +94,7 @@ export const DeleteAdmin = async (id) => {
     try {
         const res = await axios.delete(BaseUrl + Apis.auth + "/" + id)
         if (isSuccess(res.status)) {
-            return toast.success(res.data.message)
+            return toast.success("администратор заблокирован")
         }
     } catch (err) {
         return toast.error("Не удалось удалить администратора")

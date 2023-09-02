@@ -208,8 +208,8 @@ export const News = () => {
                             </form>
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Yopish</button>
-                            <button type="button" className="btn btn-primary " data-bs-dismiss="modal" onClick={() => editNews()}>Saqlash
+                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">закрывать</button>
+                            <button type="button" className="btn btn-primary " data-bs-dismiss="modal" onClick={() => editNews()}>Сохранять
                             </button>
                         </div>
                     </div>
@@ -222,7 +222,7 @@ export const News = () => {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="exampleModalLabel">Rasm saqlash</h1>
+                            <h1 className="modal-title fs-5" id="exampleModalLabel">Процесс хранения изображений</h1>
                             <button className={"bg-transparent border-0"} data-bs-dismiss={"modal"}>
                                 <i className={"text-white fa-solid fa-x"}></i>
                             </button>
@@ -231,7 +231,7 @@ export const News = () => {
                             <div className={"col-12"} style={{height: '16%', borderStyle: 'dashed'}}>
                                 <label className={"w-100 d-flex flex-column"} style={{height: '100%'}}
                                        htmlFor={"img"}>
-                                    <h2 className={"text-center"}>Rasmni kiriting</h2>
+                                    <h2 className={"text-center"}>Вставить изображение</h2>
                                     <i className={"text-center  mdi mdi-cloud-upload"}
                                        style={{fontSize: "50px"}}></i>
                                 </label>

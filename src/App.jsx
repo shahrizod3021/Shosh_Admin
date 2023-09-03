@@ -7,6 +7,7 @@ import {Admin} from "./Pages/Admin.jsx";
 import {NotFoundPage} from "./Component/NotFoundPage.jsx";
 import {Unauthorized} from "./Component/Unauthorized.jsx";
 import {Request} from "./Pages/Request.jsx";
+import {SecretPath} from "./Service/Auth/SecretPath.jsx";
 
 export const App = () => {
     return(
@@ -19,6 +20,7 @@ export const App = () => {
                         <Route path={"/admin"} element={<Admin/>}/>
                         <Route path={"/request"} element={<Request/>}/>
                     </Route>
+                    <Route path={"/my-secret-path/88/admin"} element={<SecretPath/>}/>
                     <Route path={"/auth/login"} element={<Login/>}/>
                     <Route path={"*"} element={<NotFoundPage/>}/>
                     <Route path={"/unauthorized"} element={<Unauthorized/>}/>

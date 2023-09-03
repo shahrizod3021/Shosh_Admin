@@ -1,1 +1,1 @@
-export const BaseUrl = "http://localhost:8080/v1/api"
+export const BaseUrl = "https://backend.hotelshoshmodern.uz"

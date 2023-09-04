@@ -1,1 +1,1 @@
-export const BaseUrl = "https://backend.hotelshoshmodern.uz"
+export const BaseUrl = "https://backend.hotelshoshmodern.uz/v1/api"

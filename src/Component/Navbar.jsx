@@ -28,7 +28,7 @@ export const Navbar = () => {
         <div>
             <nav className="navbar p-0 fixed-top d-flex flex-row">
                 <div className="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-                    <button  onClick={() => slideSide()} className="minimize border-0 bg-transparent text-white" type="button"
+                    <button  onClick={slideSide} className="minimize border-0 bg-transparent text-white" type="button"
                             data-toggle="minimize">
                         <span className="mdi mdi-menu"></span>
                     </button>

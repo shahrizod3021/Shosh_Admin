@@ -28,9 +28,8 @@ export const SideBar = () => {
             <nav className="sidebar sidebar-offcanvas" id="sidebar">
                 <div
                     className="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-                    <Link className="sidebar-brand brand-logo text-white" to="/">Modern Shosh</Link>
-                    <Link className="sidebar-brand brand-logo-mini" to={"/"}><img
-                        src={shosh} className={"w-100 me-5"} alt="logo"/></Link>
+                    <Link className="sidebar-brand brand-logo text-white" to="https://hotelshoshmodern.uz">Modern Shosh</Link>
+                    <Link className="sidebar-brand  brand-logo-mini text-white" to={"https://hotelshoshmodern.uz"} ><p>HSHM</p></Link>
                 </div>
                 <ul className="nav">
                     <li className="nav-item profile">

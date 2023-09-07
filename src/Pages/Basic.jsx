@@ -26,7 +26,7 @@ export const Basic = () => {
                     <div className={"card"}>
                         <div className={"card-body"}>
                             <h4 className={"card-title"}>
-                                Buyurtmalar ro'yhati
+                                Список заказов
                             </h4>
                             <div className={"table-responsive"}>
                                 <table className={"table table-bordered"}>

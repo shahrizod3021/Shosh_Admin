@@ -82,7 +82,7 @@ export const News = () => {
                     <>
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">{item.engName.toUpperCase()}</h4>
+                                <h4 className="card-title">{item.ruName.toUpperCase()}</h4>
                                 <div className="item">
                                     <button data-bs-target={"#uploadPhoto"} onClick={() => localStorage.setItem("newsId", item.id)} data-bs-toggle={"modal"} className={"border-0 bg-transparent w-100 p-0"}>
                                         <img src={Apis.getContent + item.photoId} className={"w-100"}

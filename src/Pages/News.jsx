@@ -82,7 +82,7 @@ export const News = () => {
                     <>
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">{item.ruName.toUpperCase()}</h4>
+                                <h4 className="card-title">{item.engName.toUpperCase()}</h4>
                                 <div className="item">
                                     <button data-bs-target={"#uploadPhoto"} onClick={() => localStorage.setItem("newsId", item.id)} data-bs-toggle={"modal"} className={"border-0 bg-transparent w-100 p-0"}>
                                         <img src={Apis.getContent + item.photoId} className={"w-100"}
@@ -180,18 +180,18 @@ export const News = () => {
                         </div>
                         <div className="modal-body">
                             <form>
-                                <label htmlFor="name">Yanglikni taxrirlang (uzb)</label>
-                                <input type="text" value={uzName} onChange={e => setName(e.target.value)} id={"name"}
-                                       name={"name"} className={"form-control"}
+                                <label htmlFor="uzname">Yanglikni taxrirlang (uzb)</label>
+                                <input type="text" value={uzName} onChange={e => setName(e.target.value)} id={"uzname"}
+                                       name={"uzname"} className={"form-control"}
                                        placeholder={"M.n: Modern Shosh da yangilik"}/>
-                                <label htmlFor="name" className={"mt-4"}>редактировать новости (rus)</label>
-                                <input type="text" value={ruName} onChange={e => setRuName(e.target.value)} id={"name"}
-                                       name={"name"} className={"form-control"}
+                                <label htmlFor="runame" className={"mt-4"}>редактировать новости (rus)</label>
+                                <input type="text" value={ruName} onChange={e => setRuName(e.target.value)} id={"runame"}
+                                       name={"runame"} className={"form-control"}
                                        placeholder={"M.n: Modern Shosh da yangilik"}/>
                                 <label htmlFor="name" className={"mt-4"}>edit News (eng)</label>
-                                <input type="text" value={engName} onChange={e => setEngName(e.target.value)} id={"name"}
-                                       name={"name"} className={"form-control"}
-                                       placeholder={"M.n: Modern Shosh da yangilik"}/>
+                                <input type="text" value={engName} onChange={e => setEngName(e.target.value)} id={"engname"}
+                                       name={"engname"} className={"form-control"}
+                                       placeholder={"M.n: News in Modern Shosh"}/>
                                 <label htmlFor="uzAbout" className={"mt-4"}>Yanglik haqida batafsil (uzb)</label>
                                 <textarea rows={10} id={"uzAbout"} className={"form-control"} name={"uzAbout"} value={uzAbout}
                                           placeholder={"batafsil "}
